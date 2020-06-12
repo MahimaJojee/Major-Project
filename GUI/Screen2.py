@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'Screen2.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Screen2(object):
+    def setupUi(self, Screen2_Window):
+        Screen2_Window.setObjectName("Screen2_Window")
+        Screen2_Window.resize(702, 459)
+        self.centralwidget = QtWidgets.QWidget(Screen2_Window)
+        self.centralwidget.setObjectName("centralwidget")
+        self.Screen2Image = QtWidgets.QLabel(self.centralwidget)
+        self.Screen2Image.setGeometry(QtCore.QRect(0, -10, 701, 451))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.Screen2Image.setFont(font)
+        self.Screen2Image.setText("")
+        self.Screen2Image.setPixmap(QtGui.QPixmap("Images/metro3.jpg"))
+        self.Screen2Image.setScaledContents(True)
+        self.Screen2Image.setObjectName("Screen2Image")
+        self.label2 = QtWidgets.QLabel(self.centralwidget)
+        self.label2.setGeometry(QtCore.QRect(10, 10, 681, 61))
+        font = QtGui.QFont()
+        font.setFamily("Rockwell Nova")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label2.setFont(font)
+        self.label2.setAutoFillBackground(True)
+        self.label2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.label2.setIndent(3)
+        self.label2.setObjectName("label2")
+        self.PredictedAndActualCombo = QtWidgets.QComboBox(self.centralwidget)
+        self.PredictedAndActualCombo.setGeometry(QtCore.QRect(10, 130, 361, 51))
+        font = QtGui.QFont()
+        font.setFamily("Palatino Linotype")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.PredictedAndActualCombo.setFont(font)
+        self.PredictedAndActualCombo.setAutoFillBackground(True)
+        self.PredictedAndActualCombo.setMaxVisibleItems(7)
+        self.PredictedAndActualCombo.setMaxCount(2147483645)
+        self.PredictedAndActualCombo.setObjectName("PredictedAndActualCombo")
+        self.PredictedAndActualCombo.addItem("")
+        self.PredictedAndActualCombo.addItem("")
+        self.PredictedAndActualCombo.addItem("")
+        self.PredictedAndActualCombo.addItem("")
+        self.Screen2_SubmitBtn = QtWidgets.QPushButton(self.centralwidget)
+        self.Screen2_SubmitBtn.setGeometry(QtCore.QRect(110, 180, 111, 31))
+        font = QtGui.QFont()
+        font.setFamily("Cambria")
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.Screen2_SubmitBtn.setFont(font)
+        self.Screen2_SubmitBtn.setMouseTracking(True)
+        self.Screen2_SubmitBtn.setAutoFillBackground(True)
+        self.Screen2_SubmitBtn.setAutoDefault(False)
+        self.Screen2_SubmitBtn.setDefault(False)
+        self.Screen2_SubmitBtn.setFlat(False)
+        self.Screen2_SubmitBtn.setObjectName("Screen2_SubmitBtn")
+        self.BackButton = QtWidgets.QPushButton(self.centralwidget)
+        self.BackButton.setGeometry(QtCore.QRect(270, 330, 171, 31))
+        font = QtGui.QFont()
+        font.setFamily("Cambria")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.BackButton.setFont(font)
+        self.BackButton.setMouseTracking(True)
+        self.BackButton.setAutoFillBackground(True)
+        self.BackButton.setAutoDefault(False)
+        self.BackButton.setDefault(False)
+        self.BackButton.setFlat(False)
+        self.BackButton.setObjectName("BackButton")
+        '''
+        Screen2_Window.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Screen2_Window)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 702, 21))
+        self.menubar.setObjectName("menubar")
+        Screen2_Window.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Screen2_Window)
+        self.statusbar.setObjectName("statusbar")
+        Screen2_Window.setStatusBar(self.statusbar)
+        '''
+        self.retranslateUi(Screen2_Window)
+        QtCore.QMetaObject.connectSlotsByName(Screen2_Window)
+
+    def retranslateUi(self, Screen2_Window):
+        _translate = QtCore.QCoreApplication.translate
+        Screen2_Window.setWindowTitle(_translate("Screen2_Window", "Screen2_Window"))
+        self.label2.setText(_translate("Screen2_Window", "PREDICTED AND ACTUAL OUTPUT COMPARISION"))
+        self.PredictedAndActualCombo.setItemText(0, _translate("Screen2_Window", "By number of Epochs"))
+        self.PredictedAndActualCombo.setItemText(1, _translate("Screen2_Window", "Excel File of Output"))
+        self.PredictedAndActualCombo.setItemText(2, _translate("Screen2_Window", "Histogram showing Difference"))
+        self.PredictedAndActualCombo.setItemText(3, _translate("Screen2_Window", "Scatter Plot of Output"))
+        self.Screen2_SubmitBtn.setText(_translate("Screen2_Window", "SUBMIT"))
+        self.BackButton.setText(_translate("Screen2_Window", "BACK"))
+
